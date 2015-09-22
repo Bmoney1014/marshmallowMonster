@@ -9,7 +9,7 @@ public class MarmallowMonsters
 	private double monsterLegs;
 	private boolean monsterBellyButton;
 
-	private MarmallowMonsters()
+	public MarmallowMonsters()
 	{
 		
 	}
@@ -31,40 +31,58 @@ public class MarmallowMonsters
 	{
 		return monsterName;
 	}
-	
+	public void setMonsterName(String monsterName)
+{
+	this.monsterName = monsterName;
+}
 	public int getMonsterEyes()
 	{
 		return monsterEyes;
 	}
-	
-	public void setMonsterName(String monsterName)
-	{
-		this.monsterName = monsterName;
-	}
+	public void setMonsterEyes(int monsterEyes)
+{
+this.monsterEyes =monsterEyes;
+}
 	
 	public int getMonsterNoses()
 	{
 		return monsterNoses;
 	}
-	
+	public void setMonsterNoses(int monsterNoses)
+	{
+		this.monsterNoses = monsterNoses;
+	}
 	public double getMonsterHair()
 	{
 		return monsterHair;
 	}
-	
+	public void setMonsterHair(double monsterHair)
+	{
+		this.monsterHair = monsterHair;
+	}
 	public double getMonsterLegs()
 	{
 		return monsterLegs;
 		}
-	
+	public void setMonsterLegs(double monsterLegs)
+	{
+		this.monsterLegs = monsterLegs;
+	}
 	public boolean getMonsterBellyButton()
 	{
 		return monsterBellyButton;
 	}
+	public void setMonsterBellyButton(boolean monsterBellyButton)
+	{
+		this.monsterBellyButton = monsterBellyButton;
+	}
+
+
+
 	
 	public String toString()
 	{
-		String monster = "This Monster has " + monsterEyes + "eyes" + monsterNoses + "noses" + monsterName + "name" + monsterHair + "hair" + monsterLegs + "legs" + monsterBellyButton + "bellybutton";
+		String monster = "This Monster has " + monsterEyes + " eyes " + monsterNoses + " nose and his name is " + monsterName + " he has " + monsterHair + " hairs " + monsterLegs + " legs and a " + monsterBellyButton + " bellybutton ";
 		
 		return monster;
 		
