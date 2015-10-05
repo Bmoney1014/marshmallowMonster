@@ -13,9 +13,9 @@ public class MarshmallowOutput
 	{
 		JOptionPane.showMessageDialog(null,  "My monster information is");
 	}
-	
-	{
 		
-	}
+}
+		
 	
-	}
+	
+	

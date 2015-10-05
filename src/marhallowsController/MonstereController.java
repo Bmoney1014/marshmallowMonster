@@ -6,7 +6,6 @@ import marshmallows.view.MarshmallowOutput;
 import java.util.Scanner;
 public class MonstereController
 {
-	private MarmallowMonsters brockMonster;
 	private MarmallowMonsters userMonster;
 	private MarshmallowOutput myOutput;
 	private Scanner monsterScanner;
@@ -23,44 +22,44 @@ public class MonstereController
 		
 	monsterScanner = new Scanner(System.in);
 		myOutput = new MarshmallowOutput();
-		brockMonster = new MarmallowMonsters(name, eyes, noses, hair, legs, hasBellyButton);
+		userMonster = new MarmallowMonsters(name, eyes, noses, hair, legs, hasBellyButton);
 	}
 	public void start()
 	{
-		myOutput.displayMonsterConsole(brockMonster.toString());
-		myOutput.displayMonsterGUI(brockMonster.toString());
+		myOutput.displayMonsterConsole(userMonster.toString());
+		myOutput.displayMonsterGUI(userMonster.toString());
 		//this.makeUserMonster();
 		myOutput.displayMonsterGUI("New Monster Info" + userMonster.toString());
 		//myOutput.displayMonsterInfo("New Monster Info" + userMonster.toString());
 		askQuestions();
-		myOutput.displayMonsterConsole("New Monster Info" + brockMonster.toString());
+		myOutput.displayMonsterConsole("New Monster Info" + userMonster.toString());
 	}
 	
 	private void askQuestions()
 	{
 		System.out.println("Type in a better name for the monster");
 		String betterName = monsterScanner.next();
-		brockMonster.setMonsterName(betterName);
+		userMonster.setMonsterName(betterName);
 		
 		System.out.println("Type in a different number of eyes for the monster");
 		int updatedEyes = monsterScanner.nextInt();
-		brockMonster.setMonsterEyes(updatedEyes);
+		userMonster.setMonsterEyes(updatedEyes);
 		
 		System.out.println("Type in a different number of noses for the monster.");
 		int updatedNoses = monsterScanner.nextInt();
-		brockMonster.setMonsterNoses(updatedNoses);
+		userMonster.setMonsterNoses(updatedNoses);
 		
 		System.out.println("Type in a different amount of hair for the monster.");
 		double updatedHair = monsterScanner.nextDouble();
-		brockMonster.setMonsterHair(updatedHair);
+		userMonster.setMonsterHair(updatedHair);
 		
-		System.out.println("Ty in an amount of legs for the monster.");
+		System.out.println("Type in an amount of legs for the monster.");
 		double updatedLegs = monsterScanner.nextDouble();
-		brockMonster.setMonsterLegs(updatedLegs);
+		userMonster.setMonsterLegs(updatedLegs);
 		
 		System.out.println("Does it have a belly button?");
 		boolean updatedBellyButtons = monsterScanner.nextBoolean();
-		brockMonster.setMonsterBellyButton(updatedBellyButtons);
+		userMonster.setMonsterBellyButton(updatedBellyButtons);
 		
 	}
 		
